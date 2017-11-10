@@ -33,3 +33,16 @@ function distanceTravelledInFeet(start,end) {
   }
 }
 
+function calculatesFarePrice(x,y) {
+  if (x>y) {
+    if (400<x-y)&&(x-y<2000) {
+      return (((x-y)*264)-100)*.02
+    } ((x-y)*264)-100)
+  }
+  if (y>x) {
+    if (400<y-x)&&(y-x<2000) {
+      return (((y-x)*264)-100)*.02
+    } ((y-x)*264)-100))
+  }
+  
+}
