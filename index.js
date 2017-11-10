@@ -9,6 +9,14 @@ function distanceFromHqInBlocks(block){
   }
 }
 
-function distanceFromHqInFeet(x){
-  return x=distanceFromHqInBlocks()*264
+function distanceFromHqInFeet(block){
+  if (block >42) {
+    return (block-42)*264
+  } 
+  else if (block < 42) {
+    return (42-block)*264
+  } 
+  else {
+    return "Please input a valid street number."
+  }
 }
